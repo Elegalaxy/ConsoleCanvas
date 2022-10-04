@@ -1,0 +1,30 @@
+Canvas
+
+Login, Classroom, Task list, Calender
+
+Classroom: 
+    string name, info, id
+    int teacher_num, student_num, student_max
+    vector<Student*> students;
+    vector<Teacher*> teachers;
+
+Task: 
+    string title, content, id
+    time_t create_date, finish_date
+
+Account: 
+    string name, address, password, email, id
+    Calender calender
+    int age
+
+    Student
+    - check task
+    - finish task
+    - inform teacher when finish
+
+    Teacher
+    - Create task for student
+    - Create week
+    - get list of student that finish task
+    - add student into class
+    - create class
